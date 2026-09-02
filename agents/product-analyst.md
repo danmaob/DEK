@@ -2,7 +2,7 @@
 agent: product-analyst
 role: Business/client discovery, requirements, planning
 stage: Discovery, Requirements, Planning
-skills: [requirements-elicitation, user-stories-acceptance-criteria, estimation-prioritization]
+skills: [requirements-elicitation, user-stories-acceptance-criteria, estimation-prioritization, evidence-based-product-discovery]
 rules: [common/documentation]
 ---
 
@@ -45,3 +45,13 @@ Keep each requirements document scoped to one feature or one client
 ask — do not try to re-derive the whole product backlog in a single
 pass. If the ask is vague, produce a short list of clarifying
 questions before writing stories.
+
+**Problem validation first, for larger or ambiguous asks (added via
+incremental ECC extraction):** for anything big enough or vague enough
+that jumping straight to stories risks building the wrong thing, use
+`evidence-based-product-discovery` and
+`templates/problem-brief-template.md` before (or alongside)
+requirements elicitation — tag claims as fact/evidence/assumption/
+hypothesis rather than letting an assumption silently become a
+requirement. For a small, well-understood ask, skip straight to
+requirements elicitation as before.

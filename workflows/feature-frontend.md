@@ -10,17 +10,24 @@ already-implemented backend endpoint).
 acceptance criteria.
 
 ## Steps
-1. Type the API request/response shapes from the contract
+1. **For a new UI surface with no established direction** (added via
+   incremental ECC extraction): establish it with
+   `design-direction-and-system` before building — skip this step
+   when extending an already-established design.
+2. Type the API request/response shapes from the contract
    (`typescript-standards`).
-2. Build components (`react-component-architecture`), wiring state
+3. Build components (`react-component-architecture`), wiring state
    per `frontend-state-management`.
-3. Implement forms/validation (`forms-and-validation`) and API calls
+4. Implement forms/validation (`forms-and-validation`) and API calls
    with explicit loading/error/success handling
    (`frontend-api-integration`).
-4. Write component tests covering the acceptance criteria's happy path
+5. Write component tests covering the acceptance criteria's happy path
    and at least one failure/edge case.
-5. **Verify (added 0.1.1):** run the build, the linter/type-checker,
-   and the full test suite before handoff.
+6. **Verify (added 0.1.1):** run the build, the linter/type-checker,
+   and the full test suite before handoff. Include a
+   `visual-design-quality-review` self-check (added via incremental
+   ECC extraction) alongside this for any UI change, not just new
+   surfaces.
 
 ## Exit criteria
 Build, lint/type-check, and the full test suite all pass; each

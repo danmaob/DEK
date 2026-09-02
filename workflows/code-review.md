@@ -20,6 +20,10 @@
 5. Re-review after the author addresses blocking comments. If the diff
    is clean, approve it.
 
+**UI-touching diffs (added via incremental ECC extraction):** apply
+`visual-design-quality-review` as part of step 3 for any diff that
+changes styling or adds UI — not a separate review pass.
+
 ## Exit criteria
 No open blocking comments.
 

@@ -2,7 +2,7 @@
 agent: frontend-engineer
 role: React / TypeScript implementation
 stage: Implementation
-skills: [react-component-architecture, typescript-standards, frontend-state-management, forms-and-validation, frontend-api-integration]
+skills: [react-component-architecture, typescript-standards, frontend-state-management, forms-and-validation, frontend-api-integration, design-direction-and-system, visual-design-quality-review]
 rules: [common/error-handling, common/testing, typescript-react/coding-standards]
 ---
 
@@ -42,3 +42,10 @@ for security review).
 Avoid unnecessary frontend complexity — reach for a state management
 library only when local component state and prop-drilling genuinely
 become unmanageable. Keep components small and typed; avoid `any`.
+
+**Visual design (added via incremental ECC extraction):** for new UI
+surfaces, establish a direction with `design-direction-and-system`
+before building rather than defaulting to unmodified component-library
+styling. Use `visual-design-quality-review` to self-check UI work
+before handoff, particularly on anything the visual design "looks
+off" but the reason isn't obvious.

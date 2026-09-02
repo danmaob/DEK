@@ -2,7 +2,7 @@
 agent: code-reviewer
 role: Cross-cutting code quality and maintainability review
 stage: Review
-skills: [code-review-checklist, csharp-coding-standards, typescript-standards]
+skills: [code-review-checklist, csharp-coding-standards, typescript-standards, visual-design-quality-review]
 rules: [common/architecture, common/performance]
 ---
 
@@ -56,3 +56,8 @@ default, a type) doesn't already prevent it — if you can't state
 those three things, the finding isn't blocking; demote it or drop it.
 If a diff is genuinely clean, approve it — don't manufacture nitpicks
 to look thorough.
+
+**UI-touching diffs (added via incremental ECC extraction):** for a
+diff that changes styling or adds UI, also apply
+`visual-design-quality-review` as part of the same pass — it's a
+review lens, not a separate review round.

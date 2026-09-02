@@ -1,12 +1,21 @@
 # Workflow: Discovery & Requirements
 
 **Agent(s):** `product-analyst`
-**Skills:** `requirements-elicitation`, `user-stories-acceptance-criteria`
+**Skills:** `requirements-elicitation`, `user-stories-acceptance-criteria`,
+`evidence-based-product-discovery` (for larger/ambiguous asks — see
+step 0)
 **Stage input:** A client/business ask, however rough.
 **Stage output:** A requirements note + a first draft set of user
 stories with acceptance criteria.
 
 ## Steps
+0. **For a large or ambiguous ask** (added via incremental ECC
+   extraction): before restating goals/constraints, use
+   `evidence-based-product-discovery` and
+   `templates/problem-brief-template.md` to validate the problem
+   itself — who has it, what evidence supports it, what's assumption
+   vs. fact. Skip this step for a small, well-understood ask and go
+   straight to step 1.
 1. `product-analyst` restates the problem and lists goals, constraints,
    non-goals, and open questions (`requirements-elicitation`).
 2. Resolve open questions with the stakeholder where possible; where
